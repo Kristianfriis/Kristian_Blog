@@ -94,6 +94,29 @@ footer {
 }
 /*---------------about starts here--------------*/
 
+#author_cont {
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: center;
+  margin: 20px;
+}
+
+#author_cont .item {
+  width: 400px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #f3f1f1;
+  text-align: center;
+}
+#author_cont .item img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+#author_cont .item p {
+  text-align: left;
+  font-size: 16px;
+}
 /*---------------media starts here--------------*/
 @media (max-width: 600px) {
   #header {
