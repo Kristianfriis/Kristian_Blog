@@ -2,13 +2,10 @@ import blogPost from './blog_post.mjs';
 
 const container = document.getElementById('container');
 
-function test() {
-  console.log(blogPost[0].title);
-}
-
 function getBlogPosts(){
   let output = "";
-  for (var i = 0; i < blogPost.length; i++) {
+  var blogCounter = blogPost.length-1;
+  for (var i = blogCounter; i > -1; i--) {
     output +=   `<div class="content">
                   <h2>${blogPost[i].title}</h2>
                   <div class="content_header">
